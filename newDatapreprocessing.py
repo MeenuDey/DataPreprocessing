@@ -2,7 +2,7 @@
 """
 Created on Tue Nov 13 12:16:07 2018
 
-@author: iiit
+@author: Meenu Dey
 """
 
 import numpy as py
