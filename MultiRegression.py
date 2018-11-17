@@ -31,15 +31,6 @@ imputer = imputer.fit(X.values[:, 0:8])
 X.values[:, 0:8] = imputer.transform(X.values[:, 0:8])
 
 
-
-#tacking care of missing data
-
-
-
-
-#Encoding catagorical data
-
-
 #Splitting the dataset into the Training srt and Test set
 from sklearn.cross_validation import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 0)
