@@ -8,16 +8,15 @@ Created on Tue Nov 13 12:16:07 2018
 import numpy as py
 import matplotlib.pyplot as plt
 import pandas as pd
+
 dataset = pd.read_csv('AllData.csv')
 X = dataset.iloc[:, :-1].values
 df = dataset.iloc[:, 4].values   
 Y = pd.DataFrame(df)
+
 #tacking care of missing data
 from sklearn.preprocessing import Imputer
 imputer = Imputer(missing_values = 'NaN', startegy = 'mean', axis = 0)
-
- 
-
 
 #Encoding catagorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
